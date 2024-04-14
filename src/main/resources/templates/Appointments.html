@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Appointments</title>
+</head>
+<body>
+    <h1>Appointments</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Customer Name</th>
+            <th>Date Time</th>
+        </tr>
+        <!-- Loop through appointments and display each one -->
+        <th:block th:each="appointment : ${appointments}">
+            <tr>
+                <td th:text="${appointment.id}"></td>
+                <td th:text="${appointment.customerName}"></td>
+                <td th:text="${appointment.dateTime}"></td>
+            </tr>
+        </th:block>
+    </table>
+</body>
+</html>
