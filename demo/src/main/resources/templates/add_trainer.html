@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Trainer</title>
+    <link rel="stylesheet" href="/static/add_trainer.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+<div class="container">
+    <h1 class="title">Add New Trainer</h1>
+    <form id="trainerForm" class="form">
+        <label for="name" class="label">Name:</label>
+        <input type="text" id="name" name="name" class="input" maxlength="45" required><br>
+        <label for="sex" class="label">Sex:</label>
+        <select id="sex" name="sex" class="select" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br>
+        <label for="honour" class="label">Honour:</label>
+        <input type="text" id="honour" name="honour" class="input" maxlength="45"><br>
+        <label for="experience" class="label">Experience:</label>
+        <input type="text" id="experience" name="experience" class="input" maxlength="45"><br>
+        <label for="entry-time" class="label">Entry Time:</label>
+        <input type="datetime-local" id="entry-time" name="entry-time" class="input"><br> <!-- Changed to datetime-local type -->
+        <button type="submit" id="submitButton" class="button">Submit</button>
+        <button type="button" id="cancelButton" class="button">Cancel</button>
+    </form>
+</div>
+
+<script src="/static/add_trainer.js"></script> <!-- Link to the external JavaScript file -->
+</body>
+</html>

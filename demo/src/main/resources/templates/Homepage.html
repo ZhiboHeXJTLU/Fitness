@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Center Appointment System</title>
+    <link rel="stylesheet" href="/static/styles/styles.css">
+    <link rel="stylesheet" href="/static/styles/Index_Welcome.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#appointment">Make an Appointment</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="top-section">
+    <div class="container">
+        <h1>Welcome to Fitness Center</h1>
+        <p>Your destination for a healthier lifestyle.</p>
+    </div>
+</section>
+<section id="services" class="container">
+    <div class="container">
+        <h2>Our Services</h2>
+        <p>We offer a wide range of fitness services to meet your needs.</p>
+        <div class="services-list">
+            <div class="service">
+                <h3>Fitness Classes</h3>
+                <p>Join our group fitness classes for a fun workout experience.</p>
+            </div>
+            <div class="service">
+                <h3>Personal Training</h3>
+                <p>Get personalized training sessions with our certified trainers.</p>
+            </div>
+            <div class="service">
+                <h3>Yoga Classes</h3>
+                <p>Relax your mind and body with our yoga classes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about" class="container">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Learn more about our Fitness Center and our mission to help you achieve your fitness goals.</p>
+    </div>
+</section>
+<section id="contact" class="container">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have questions? Feel free to contact us for more information.</p>
+        <address>
+            Fitness Center<br>
+            123 Main Street, City, Country<br>
+            Phone: 123-456-7890<br>
+            Email: info@fitnesscenter.com
+        </address>
+    </div>
+</section>
+<section id="appointment" class="container">
+    <div class="container">
+        <h2>Make an Appointment</h2>
+        <form action="make-appointment.php" method="post">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <label for="service">Select Service:</label>
+            <select id="service" name="service" required>
+                <option value="fitness-classes">Fitness Classes</option>
+                <option value="personal-training">Personal Training</option>
+                <option value="yoga-classes">Yoga Classes</option>
+            </select>
+            <button type="submit">Submit</button>
+            <br>
+        </form>
+        <a href="make_appointment.html" class="make-appointment-btn">Appointment Information</a>
+    </div>
+</section>
+<footer class="container">
+    <div class="container">
+        <p>&copy; 2024 Fitness Center. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- 返回顶部按钮 -->
+<button class="scroll-to-top-btn" onclick="scrollToTop()">↑</button>
+
+<!-- 引入 JavaScript 文件 -->
+<script src="/static/scripts/index.js"></script>
+
+</body>
+</html>
